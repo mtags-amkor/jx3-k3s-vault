@@ -20,7 +20,7 @@ spec:
   - key: dev
   - key: staging
   ingress:
-    domain: 10.40.3.88.nip.io
+    domain: muzabpprx01.my.ds.amkor.com
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .jx.
@@ -30,7 +30,6 @@ spec:
       production: false
   repository: bucketrepo
   secretStorage: vault
-  vault: {}
-  webhook: lighthouse
   vault:
     url: http://muzabpprx01:8200
+  webhook: lighthouse
