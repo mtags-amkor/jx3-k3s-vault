@@ -34,9 +34,11 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: mtags-amkor
+    repository: jx3-k3s-vault
   - key: staging
   ingress:
-    domain: change.me
+    domain: muzabpprx01.my.ds.amkor.com
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .tekton-pipelines.
@@ -44,9 +46,12 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: mtags-amkor
   repository: bucketrepo
   secretStorage: vault
-  vault: {}
+  vault:
+    url: http://muzabpprx01.my.ds.amkor.com:8200
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
   enabled: false
