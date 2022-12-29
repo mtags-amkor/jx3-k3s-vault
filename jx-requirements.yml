@@ -31,5 +31,5 @@ spec:
   repository: bucketrepo
   secretStorage: vault
   vault:
-    url: http://muzabpprx01:8200
+    url: http://muzabpprx01.my.ds.amkor.com:8200
   webhook: lighthouse
