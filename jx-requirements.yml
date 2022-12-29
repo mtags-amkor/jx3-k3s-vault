@@ -32,3 +32,5 @@ spec:
   secretStorage: vault
   vault: {}
   webhook: lighthouse
+  vault:
+    url: http://muzabpprx01:8200
